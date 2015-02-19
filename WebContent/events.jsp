@@ -30,13 +30,17 @@
           <div class="list-group">
             <p class="lead">Categorías</p>
             <ul class="nav nav-pills nav-stacked" role="tablist">
-              <li><a href="products.html"> Categoría 1</a></li>
+            	<c:forEach items="${categories}" var="category">
+            		<li><a href="#">${category.name}</a></li>
+            	</c:forEach>
             </ul>
           </div>
           <div class="list-group">
-            <p class="lead">Ciudades</p>
+            <p class="lead">Lugares</p>
             <ul class="nav nav-pills nav-stacked" role="tablist">
-              <li><a href="products.html"> Oviedo </a></li>
+              <c:forEach items="${places}" var="place">
+            		<li><a href="#">${place}</a></li>
+            	</c:forEach>
             </ul>
           </div>
         </div>

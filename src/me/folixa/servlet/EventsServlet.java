@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.sun.mail.iap.Response;
 
 import me.folixa.ws.Event;
+import me.folixa.ws.EventsCategories;
 import me.folixa.ws.EventsWSService;
 import me.folixa.wsclient.EventsWSClient;
 
@@ -37,8 +38,13 @@ public class EventsServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		PrintWriter out = resp.getWriter();
+		
 		List<Event> events = client.readEvents();
+		List<EventsCategories> categories = client.readCategories();
+		List<String> places = client.getPlaces();
+		
+		req.setAttribute("places", places);
+		req.setAttribute("categories", categories);
 		req.setAttribute("events", events);
 		req.getRequestDispatcher("events.jsp").forward(req, resp);
 	}
