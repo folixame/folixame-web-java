@@ -136,4 +136,15 @@ public class Event {
 		this.category = category;
 	}
 
+	@Override
+	public String toString() {
+		return "Event [id=" + id + ", name=" + name + ", place=" + place
+				+ ", shortDescription=" + shortDescription
+				+ ", longDescription=" + longDescription + ", date=" + date
+				+ ", startDate=" + startDate + ", endDate=" + endDate
+				+ ", validated=" + validated + ", category=" + category + "]";
+	}
+	
+	
+
 }

@@ -77,19 +77,6 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <hr>
-      <!-- Footer -->
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright &copy; Folíxame 2015</p>
-          </div>
-        </div>
-      </footer>
-    </div> 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <jsp:include page="footer.jsp"/>
   </body>
 </html>

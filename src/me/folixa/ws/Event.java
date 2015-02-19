@@ -317,4 +317,15 @@ public class Event {
         this.validated = value;
     }
 
+	@Override
+	public String toString() {
+		return "Event [endDate=" + endDate + ", eventDate=" + eventDate
+				+ ", eventsCategoriesId=" + eventsCategoriesId + ", id=" + id
+				+ ", images=" + images + ", longDescription=" + longDescription
+				+ ", name=" + name + ", place=" + place + ", shortDescription="
+				+ shortDescription + ", startDate=" + startDate
+				+ ", validated=" + validated + "]";
+	}
+
+    
 }
