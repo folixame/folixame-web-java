@@ -46,13 +46,14 @@ $RECYCLE.BIN/
 
 
 ### Java ###
-*.class
+#*.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # Package Files #
-*.jar
+
+#*.jar
 *.war
 *.ear
 
@@ -146,4 +147,6 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
+
+build/
 
