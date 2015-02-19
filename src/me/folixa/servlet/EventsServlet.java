@@ -39,10 +39,8 @@ public class EventsServlet extends HttpServlet {
 			throws ServletException, IOException {
 		PrintWriter out = resp.getWriter();
 		List<Event> events = client.readEvents();
-		for (Event event : events) {
-			out.println(event);
-		}
-		
+		req.setAttribute("events", events);
+		req.getRequestDispatcher("events.jsp").forward(req, resp);
 	}
 	
 
