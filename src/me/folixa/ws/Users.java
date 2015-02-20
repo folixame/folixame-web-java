@@ -84,6 +84,28 @@ public class Users
         return super.getPort(new QName("http://folixa.me/", "UsersSoap"), UsersSoap.class, features);
     }
 
+    /**
+     * 
+     * @return
+     *     returns UsersSoap
+     */
+    @WebEndpoint(name = "UsersSoap12")
+    public UsersSoap getUsersSoap12() {
+        return super.getPort(new QName("http://folixa.me/", "UsersSoap12"), UsersSoap.class);
+    }
+
+    /**
+     * 
+     * @param features
+     *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
+     * @return
+     *     returns UsersSoap
+     */
+    @WebEndpoint(name = "UsersSoap12")
+    public UsersSoap getUsersSoap12(WebServiceFeature... features) {
+        return super.getPort(new QName("http://folixa.me/", "UsersSoap12"), UsersSoap.class, features);
+    }
+
     private static URL __getWsdlLocation() {
         if (USERS_EXCEPTION!= null) {
             throw USERS_EXCEPTION;

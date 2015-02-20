@@ -32,8 +32,8 @@ public interface UsersSoap {
      */
     @WebMethod(operationName = "SignUp", action = "http://folixa.me/SignUp")
     @WebResult(name = "SignUpResult", targetNamespace = "http://folixa.me/")
-    @RequestWrapper(localName = "SignUp", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.SignUp")
-    @ResponseWrapper(localName = "SignUpResponse", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.SignUpResponse")
+    @RequestWrapper(localName = "SignUp", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.SignUp")
+    @ResponseWrapper(localName = "SignUpResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.SignUpResponse")
     public String signUp(
         @WebParam(name = "email", targetNamespace = "http://folixa.me/")
         String email,
@@ -42,28 +42,35 @@ public interface UsersSoap {
 
     /**
      * 
+     * @param security
      * @return
      *     returns java.lang.String
      */
     @WebMethod(operationName = "LogIn", action = "http://folixa.me/LogIn")
     @WebResult(name = "LogInResult", targetNamespace = "http://folixa.me/")
-    @RequestWrapper(localName = "LogIn", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.LogIn")
-    @ResponseWrapper(localName = "LogInResponse", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.LogInResponse")
-    public String logIn();
+    @RequestWrapper(localName = "LogIn", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.LogIn")
+    @ResponseWrapper(localName = "LogInResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.LogInResponse")
+    public String logIn(
+        @WebParam(name = "Security", targetNamespace = "http://schemas.xmlsoap.org/ws/2002/04/secext", header = true, partName = "Security")
+        Security security);
 
     /**
      * 
+     * @param security
      * @return
      *     returns java.lang.String
      */
     @WebMethod(operationName = "Delete", action = "http://folixa.me/Delete")
     @WebResult(name = "DeleteResult", targetNamespace = "http://folixa.me/")
-    @RequestWrapper(localName = "Delete", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.Delete")
-    @ResponseWrapper(localName = "DeleteResponse", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.DeleteResponse")
-    public String delete();
+    @RequestWrapper(localName = "Delete", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.Delete")
+    @ResponseWrapper(localName = "DeleteResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.DeleteResponse")
+    public String delete(
+        @WebParam(name = "Security", targetNamespace = "http://schemas.xmlsoap.org/ws/2002/04/secext", header = true, partName = "Security")
+        Security security);
 
     /**
      * 
+     * @param security
      * @param inputEmail
      * @param inputPassword
      * @return
@@ -71,23 +78,25 @@ public interface UsersSoap {
      */
     @WebMethod(operationName = "Update", action = "http://folixa.me/Update")
     @WebResult(name = "UpdateResult", targetNamespace = "http://folixa.me/")
-    @RequestWrapper(localName = "Update", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.Update")
-    @ResponseWrapper(localName = "UpdateResponse", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.UpdateResponse")
+    @RequestWrapper(localName = "Update", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.Update")
+    @ResponseWrapper(localName = "UpdateResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.UpdateResponse")
     public String update(
         @WebParam(name = "inputEmail", targetNamespace = "http://folixa.me/")
         String inputEmail,
         @WebParam(name = "inputPassword", targetNamespace = "http://folixa.me/")
-        String inputPassword);
+        String inputPassword,
+        @WebParam(name = "Security", targetNamespace = "http://schemas.xmlsoap.org/ws/2002/04/secext", header = true, partName = "Security")
+        Security security);
 
     /**
      * 
      * @return
-     *     returns ws.unit6.example1.webservice.ArrayOfProfile
+     *     returns me.folixa.ws.ArrayOfProfile
      */
     @WebMethod(operationName = "GetProfiles", action = "http://folixa.me/GetProfiles")
     @WebResult(name = "GetProfilesResult", targetNamespace = "http://folixa.me/")
-    @RequestWrapper(localName = "GetProfiles", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.GetProfiles")
-    @ResponseWrapper(localName = "GetProfilesResponse", targetNamespace = "http://folixa.me/", className = "ws.unit6.example1.webservice.GetProfilesResponse")
+    @RequestWrapper(localName = "GetProfiles", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.GetProfiles")
+    @ResponseWrapper(localName = "GetProfilesResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.GetProfilesResponse")
     public ArrayOfProfile getProfiles();
 
 }

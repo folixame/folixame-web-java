@@ -44,11 +44,12 @@
             <div class="col-sm-4">
               <div class="login-form"><!--sign up form-->
                 <h2>Crear cuenta</h2>
-                <form action="#">
-                  <input type="text" placeholder="Nombre" />
-                  <input type="surname" placeholder="Apellido" />
-                  <input type="username" placeholder="Usuario" />
-                  <input type="password" placeholder="Contraseña" />
+                <form action="login" method="post">
+                  <input type="text" name="first-name" placeholder="Nombre" />
+                  <input type="text" name="surname" placeholder="Apellido" />
+                  <input type="text" name="username" placeholder="Usuario" />
+                  <input type="email" name="email" placeholder="Email" />
+                  <input type="password" name="password" placeholder="Contraseña" />
                   <button type="submit" class="btn btn-default">Registrar</button>
                 </form>
               </div><!--/sign up form-->

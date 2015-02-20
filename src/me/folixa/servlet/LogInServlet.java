@@ -18,7 +18,9 @@ import com.sun.mail.iap.Response;
 import me.folixa.ws.Event;
 import me.folixa.ws.EventsCategories;
 import me.folixa.ws.EventsWSService;
+import me.folixa.ws.Users;
 import me.folixa.wsclient.EventsWSClient;
+import me.folixa.wsclient.UsersWSClient;
 
 /**
  * @author jorgeyp
@@ -26,13 +28,13 @@ import me.folixa.wsclient.EventsWSClient;
  */
 @WebServlet("/login")
 public class LogInServlet extends HttpServlet {
-	EventsWSClient client;
+	UsersWSClient client;
 
 	/**
 	 * 
 	 */
 	public LogInServlet() {
-		client = new EventsWSClient();
+		client = new UsersWSClient();
 	}
 
 	@Override
@@ -41,7 +43,16 @@ public class LogInServlet extends HttpServlet {
 		
 		resp.sendRedirect("login.jsp");
 	}
-	
 
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		String email = req.getParameter("email");
+		String password = req.getParameter("password");
+		client.SignUp(email, password);
+		resp.sendRedirect("index");
+	}
+	
+	
 
 }
