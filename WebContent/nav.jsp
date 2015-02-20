@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page session="true" %>
 <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -52,6 +53,11 @@
               
               </ul>
               <ul class="nav navbar-nav navbar-right">
+                <c:choose>
+                	<c:when test="${sessionScope.loggedIn==\"user\"}">
+                		<li><a href="profile">Perfil de ${sessionScope.email}</a></li>
+                	</c:when>
+                </c:choose>
                 <li><a href="login">Iniciar Sesión</a></li>
               </ul>
             </div>
