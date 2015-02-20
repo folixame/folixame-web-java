@@ -12,47 +12,47 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp">Folíxame</a>
+                <a class="navbar-brand" href="index">Folíxame</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
               	<c:choose>
               		<c:when test="${param.active eq 'index'}">
-              			<li class="active"><a href="index.jsp">Inicio</a></li>
+              			<li class="active"><a href="index">Inicio</a></li>
               		</c:when>
               		<c:otherwise>
-              			<li><a href="index.jsp">Inicio</a></li>
+              			<li><a href="index">Inicio</a></li>
               		</c:otherwise>
               	</c:choose>
               	              	<c:choose>
               		<c:when test="${param.active eq 'events'}">
-              			<li class="active"><a href="events.jsp">Eventos</a></li>
+              			<li class="active"><a href="events">Eventos</a></li>
               		</c:when>
               		<c:otherwise>
-              			<li><a href="events.jsp">Eventos</a></li>
+              			<li><a href="events">Eventos</a></li>
               		</c:otherwise>
               	</c:choose>
               	              	<c:choose>
               		<c:when test="${param.active eq 'map'}">
-              			<li class="active"><a href="map.jsp">Mapa</a></li>
+              			<li class="active"><a href="map">Mapa</a></li>
               		</c:when>
               		<c:otherwise>
-              			<li><a href="map.jsp">Mapa</a></li>
+              			<li><a href="map">Mapa</a></li>
               		</c:otherwise>
               	</c:choose>
               	              	<c:choose>
               		<c:when test="${param.active eq 'tienda'}">
-              			<li class="active"><a href="tienda.jsp">Tienda</a></li>
+              			<li class="active"><a href="tienda">Tienda</a></li>
               		</c:when>
               		<c:otherwise>
-              			<li><a href="tienda.jsp">Tienda</a></li>
+              			<li><a href="tienda">Tienda</a></li>
               		</c:otherwise>
               	</c:choose>
               
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.jsp">Iniciar Sesión</a></li>
+                <li><a href="login">Iniciar Sesión</a></li>
               </ul>
             </div>
             <!-- /.navbar-collapse -->

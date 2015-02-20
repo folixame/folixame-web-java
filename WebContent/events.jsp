@@ -1,3 +1,5 @@
+<%@page import="me.folixa.ws.Event"%>
+<%@page import="java.util.Calendar"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -51,53 +53,23 @@
           <c:forEach items="${events}" var="event">
           	<li>
               <time datetime="${event.eventDate}">
-                <span class="day">4</span>
-                <span class="month">Jul</span>
-                <span class="year">2015</span>
+                <span class="day">${event.eventDate.getDay()}</span>
+                <span class="month">${event.eventDate.getMonth()}</span>
+                <span class="year">${event.eventDate.getYear()}</span>
               </time>
-              <img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
+              <img alt="${event.name}" src="${event.images.get(0).url}" />
               <div class="info">
                 <h2 class="title"><a href="#">${event.name}</a></h2>
                 <p class="desc">${event.shortDescription}</p>
                 <ul>
-                  <li style="width:33%;"><span class="glyphicon glyphicon-calendar"> 01-01-2015 </span></li>
-                  <li style="width:34%;"><span class="glyphicon glyphicon-calendar"> 01-01-2015 </span></span></li>
+                  <li style="width:33%;"><span class="glyphicon glyphicon-calendar">
+                  	${event.startDate.getDay()}-${event.startDate.getMonth()}-${event.startDate.getYear()}</span></li>
+                  <li style="width:34%;"><span class="glyphicon glyphicon-calendar">
+					${event.endDate.getDay()}-${event.endDate.getMonth()}-${event.endDate.getYear()}</span></li>
                 </ul>
               </div>
             </li>	
           </c:forEach>
-          
-            <li>
-              <time datetime="2014-07-20">
-                <span class="day">4</span>
-                <span class="month">Jul</span>
-                <span class="year">2015</span>
-              </time>
-              <img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
-              <div class="info">
-                <h2 class="title"><a href="#">Independence Day (Name)</a></h2>
-                <p class="desc">United States Holiday (short_description)</p>
-                <ul>
-                  <li style="width:33%;"><span class="glyphicon glyphicon-calendar"> 01-01-2015 </span></li>
-                  <li style="width:34%;"><span class="glyphicon glyphicon-calendar"> 01-01-2015 </span></span></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <time datetime="2014-07-20 2000">
-                <span class="day">20</span>
-                <span class="month">Jan</span>
-              </time>
-              <img alt="My 24th Birthday!" src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg" />
-              <div class="info">
-                <h2 class="title">Mouse0270's 24th Birthday!</h2>
-                <p class="desc">Bar Hopping in Erie, Pa.</p>
-                <ul>
-                  <li style="width:33%;"><span class="glyphicon glyphicon-calendar"> 01-01-2015 </span></li>
-                  <li style="width:34%;"><span class="glyphicon glyphicon-calendar"> 01-01-2015 </span></span></li>
-                </ul>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
