@@ -26,14 +26,14 @@ import me.folixa.wsclient.UsersWSClient;
  * @author jorgeyp
  *
  */
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/signUp")
+public class SignUpServlet extends HttpServlet {
 	UsersWSClient client;
 
 	/**
 	 * 
 	 */
-	public LoginServlet() {
+	public SignUpServlet() {
 		client = new UsersWSClient();
 	}
 
@@ -49,17 +49,8 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
-		
-		if (client.logIn(email, password)) {
-			req.getSession().setAttribute("email", email);
-			req.getSession().setAttribute("password", password); // :'( ... el tiempo apremia. TODO fix
-			req.getSession().setAttribute("loggedIn", "user");
-			resp.sendRedirect("index");
-			
-		} else {
-			req.setAttribute("error", "Bad login.");
-			req.getRequestDispatcher("login.jsp").forward(req, resp);
-		}
+		client.SignUp(email, password);
+		resp.sendRedirect("index");
 	}
 	
 	

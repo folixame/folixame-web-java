@@ -31,9 +31,9 @@
             <div class="col-sm-4 col-sm-offset-1">
               <div class="login-form"><!--login form-->
                 <h2>Iniciar sesión</h2>
-                <form action="#">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email Address" />
+                <form action="login" method="post">
+                  <input type="text" name="email" placeholder="Email" />
+                  <input type="password" name="password" placeholder="Password" />
                   <button type="submit" class="btn btn-default">Login</button>
                 </form>
               </div><!--/login form-->
@@ -44,7 +44,7 @@
             <div class="col-sm-4">
               <div class="login-form"><!--sign up form-->
                 <h2>Crear cuenta</h2>
-                <form action="login" method="post">
+                <form action="signUp" method="post">
                   <input type="text" name="first-name" placeholder="Nombre" />
                   <input type="text" name="surname" placeholder="Apellido" />
                   <input type="text" name="username" placeholder="Usuario" />

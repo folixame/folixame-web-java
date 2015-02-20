@@ -18,5 +18,12 @@ public class UsersWSClient {
 		service.signUp(email, password);
 	}
 	
+	public boolean logIn(String email, String password) {
+		security.setEmail(email);
+		security.setPassword(password);
+		String resp = service.logIn(security);
+		System.out.println(resp);
+		return resp.equals("OK")? true : false;
+	}
 	
 }
