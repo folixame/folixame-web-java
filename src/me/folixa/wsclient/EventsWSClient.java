@@ -220,4 +220,24 @@ public class EventsWSClient {
 			e.printStackTrace();
 		}
 	}
+
+	public void updateCategory(int id, String name) {
+		try {
+			eventsws.updateCategoryById(id, name);
+		} catch (DatabaseException_Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void deleteCategory(int id) {
+		try {
+			eventsws.deleteCategoryById(id);
+		} catch (DatabaseException_Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 }

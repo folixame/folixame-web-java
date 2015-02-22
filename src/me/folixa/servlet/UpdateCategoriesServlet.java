@@ -18,24 +18,23 @@ import me.folixa.wsclient.UsersWSClient;
  * @author jorgeyp
  *
  */
-@WebServlet("/modificareventos")
-public class UpdateEventsServlet extends HttpServlet {
+@WebServlet("/modificarcategorias")
+public class UpdateCategoriesServlet extends HttpServlet {
 	EventsWSClient client;
 
 	/**
 	 * 
 	 */
-	public UpdateEventsServlet() {
+	public UpdateCategoriesServlet() {
 		client = new EventsWSClient();
 	}
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		String evetnId = req.getParameter("eventIdUpdate");
-		
+		String categoryId = req.getParameter("categoryIdUpdate");
 		if(req.getSession().getAttribute("permission").equals("admin")) {
-			req.getRequestDispatcher("/WEB-INF/modificareventos.jsp").forward(req, resp);
+			req.getRequestDispatcher("/WEB-INF/modificarcategorias.jsp").forward(req, resp);
 		} else {
 			System.out.println("Auth error");
 			req.setAttribute("error", "No es admin.");
@@ -46,18 +45,12 @@ public class UpdateEventsServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		int id = Integer.parseInt(req.getParameter("eventIdUpdate"));
+		int id = Integer.parseInt(req.getParameter("categoryIdUpdate"));
 		String name = req.getParameter("name");
-		String place = req.getParameter("place");
-		String startDate = req.getParameter("startdate");
-		String endDate = req.getParameter("enddate");
-		String category = req.getParameter("category");
-		String shortDescription = req.getParameter("shortdescription");
-		String longDescription = req.getParameter("longdescription");
 		
 		if (req.getSession().getAttribute("permission").equals("admin")) {
-			client.updateEvent(id, name, place, startDate, endDate, category, shortDescription, longDescription);
-			resp.sendRedirect("listareventos");
+			client.updateCategory(id, name);
+			resp.sendRedirect("listarcategorias");
 		} else {
 			req.setAttribute("error", "Bad login.");
 			req.getRequestDispatcher("login.jsp").forward(req, resp);
