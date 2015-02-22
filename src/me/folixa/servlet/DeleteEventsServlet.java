@@ -18,21 +18,25 @@ import me.folixa.wsclient.UsersWSClient;
  * @author jorgeyp
  *
  */
-@WebServlet("/listarcategorias")
-public class ListCategoriesServlet extends HttpServlet {
+@WebServlet("/borrareventos")
+public class DeleteEventsServlet extends HttpServlet {
+	EventsWSClient client;
 
 	/**
 	 * 
 	 */
-	public ListCategoriesServlet() {
-		
+	public DeleteEventsServlet() {
+		client = new EventsWSClient();
 	}
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		int evetnId = Integer.parseInt(req.getParameter("eventIdDelete"));
+		
 		if(req.getSession().getAttribute("permission").equals("admin")) {
-			req.getRequestDispatcher("/WEB-INF/listarcategorias.jsp").forward(req, resp);
+			client.deleteEvent(evetnId);
+			resp.sendRedirect("listareventos");
 		} else {
 			System.out.println("Auth error");
 			req.setAttribute("error", "No es admin.");

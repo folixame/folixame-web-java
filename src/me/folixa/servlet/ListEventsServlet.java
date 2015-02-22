@@ -45,9 +45,7 @@ public class ListEventsServlet extends HttpServlet {
 			req.setAttribute("error", "No es admin.");
 			resp.sendRedirect("login.jsp");
 		}
-		
-		
-		
+
 	}
 	
 
