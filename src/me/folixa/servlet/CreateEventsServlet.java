@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import me.folixa.wsclient.EventsWSClient;
 import me.folixa.wsclient.UsersWSClient;
 
 /**
@@ -19,13 +20,13 @@ import me.folixa.wsclient.UsersWSClient;
  */
 @WebServlet("/creareventos")
 public class CreateEventsServlet extends HttpServlet {
-	UsersWSClient client;
+	EventsWSClient client;
 
 	/**
 	 * 
 	 */
 	public CreateEventsServlet() {
-		client = new UsersWSClient();
+		client = new EventsWSClient();
 	}
 
 	@Override
@@ -43,15 +44,17 @@ public class CreateEventsServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		String email = req.getParameter("email");
-		String password = req.getParameter("password");
+		String name = req.getParameter("name");
+		String place = req.getParameter("place");
+		String startDate = req.getParameter("startdate");
+		String endDate = req.getParameter("enddate");
+		String category = req.getParameter("category");
+		String shortDescription = req.getParameter("shortdescription");
+		String longDescription = req.getParameter("longdescription");
 		
-		if (client.logIn(email, password)) {
-			req.getSession().setAttribute("email", email);
-			req.getSession().setAttribute("password", password); // :'( ... el tiempo apremia. TODO fix
-			req.getSession().setAttribute("permission", "user");
-			resp.sendRedirect("index");
-			
+		if (req.getSession().getAttribute("permission").equals("admin")) {
+			client.createEvent(name, place, startDate, endDate, category, shortDescription, longDescription);
+			req.getRequestDispatcher("/WEB-INF/creareventos.jsp").forward(req, resp);
 		} else {
 			req.setAttribute("error", "Bad login.");
 			req.getRequestDispatcher("login.jsp").forward(req, resp);

@@ -25,7 +25,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="eventDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="eventsCategoriesId" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="images" type="{http://webservices.events.folixame.ws/}image" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="images" type="{http://webservices.events.folixa.me/}image" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="longDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="place" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>

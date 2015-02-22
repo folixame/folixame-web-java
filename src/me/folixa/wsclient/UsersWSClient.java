@@ -30,5 +30,6 @@ public class UsersWSClient {
 		String resp = service.getUserPermission(email);
 		return resp.equals("admin") ? true : false;
 	}
+
 	
 }

@@ -56,6 +56,8 @@ public class CreateImagesServlet extends HttpServlet {
 			req.setAttribute("error", "Bad login.");
 			req.getRequestDispatcher("login.jsp").forward(req, resp);
 		}
+		
+		
 	}
 	
 	

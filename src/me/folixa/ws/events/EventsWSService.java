@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "EventsWSService", targetNamespace = "http://webservices.events.folixame.ws/", wsdlLocation = "http://156.35.95.51:8080/wsfolixameevents/events?wsdl")
+@WebServiceClient(name = "EventsWSService", targetNamespace = "http://webservices.events.folixa.me/", wsdlLocation = "http://156.35.95.51:8080/wsfolixameevents/events?wsdl")
 public class EventsWSService
     extends Service
 {
 
     private final static URL EVENTSWSSERVICE_WSDL_LOCATION;
     private final static WebServiceException EVENTSWSSERVICE_EXCEPTION;
-    private final static QName EVENTSWSSERVICE_QNAME = new QName("http://webservices.events.folixame.ws/", "EventsWSService");
+    private final static QName EVENTSWSSERVICE_QNAME = new QName("http://webservices.events.folixa.me/", "EventsWSService");
 
     static {
         URL url = null;
@@ -69,7 +69,7 @@ public class EventsWSService
      */
     @WebEndpoint(name = "EventsWSPort")
     public IEventsWS getEventsWSPort() {
-        return super.getPort(new QName("http://webservices.events.folixame.ws/", "EventsWSPort"), IEventsWS.class);
+        return super.getPort(new QName("http://webservices.events.folixa.me/", "EventsWSPort"), IEventsWS.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class EventsWSService
      */
     @WebEndpoint(name = "EventsWSPort")
     public IEventsWS getEventsWSPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://webservices.events.folixame.ws/", "EventsWSPort"), IEventsWS.class, features);
+        return super.getPort(new QName("http://webservices.events.folixa.me/", "EventsWSPort"), IEventsWS.class, features);
     }
 
     private static URL __getWsdlLocation() {

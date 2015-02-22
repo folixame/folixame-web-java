@@ -20,7 +20,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "IEventsWS", targetNamespace = "http://webservices.events.folixame.ws/")
+@WebService(name = "IEventsWS", targetNamespace = "http://webservices.events.folixa.me/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -35,9 +35,9 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "uploadImage", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UploadImage")
-    @ResponseWrapper(localName = "uploadImageResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UploadImageResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/uploadImageRequest", output = "http://webservices.events.folixame.ws/IEventsWS/uploadImageResponse")
+    @RequestWrapper(localName = "uploadImage", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UploadImage")
+    @ResponseWrapper(localName = "uploadImageResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UploadImageResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/uploadImageRequest", output = "http://webservices.events.folixa.me/IEventsWS/uploadImageResponse")
     public boolean uploadImage(
         @WebParam(name = "img", targetNamespace = "")
         Image img);
@@ -54,10 +54,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "createImage", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.CreateImage")
-    @ResponseWrapper(localName = "createImageResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.CreateImageResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/createImageRequest", output = "http://webservices.events.folixame.ws/IEventsWS/createImageResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/createImage/Fault/DatabaseException")
+    @RequestWrapper(localName = "createImage", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.CreateImage")
+    @ResponseWrapper(localName = "createImageResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.CreateImageResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/createImageRequest", output = "http://webservices.events.folixa.me/IEventsWS/createImageResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/createImage/Fault/DatabaseException")
     })
     public boolean createImage(
         @WebParam(name = "name", targetNamespace = "")
@@ -83,17 +83,17 @@ public interface IEventsWS {
      * @param startDate
      * @param eventDate
      * @return
-     *     returns boolean
+     *     returns int
      * @throws DatabaseException_Exception
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "createEvent", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.CreateEvent")
-    @ResponseWrapper(localName = "createEventResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.CreateEventResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/createEventRequest", output = "http://webservices.events.folixame.ws/IEventsWS/createEventResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/createEvent/Fault/DatabaseException")
+    @RequestWrapper(localName = "createEvent", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.CreateEvent")
+    @ResponseWrapper(localName = "createEventResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.CreateEventResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/createEventRequest", output = "http://webservices.events.folixa.me/IEventsWS/createEventResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/createEvent/Fault/DatabaseException")
     })
-    public boolean createEvent(
+    public int createEvent(
         @WebParam(name = "name", targetNamespace = "")
         String name,
         @WebParam(name = "place", targetNamespace = "")
@@ -124,10 +124,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readEventsForAdministrator", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsForAdministrator")
-    @ResponseWrapper(localName = "readEventsForAdministratorResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsForAdministratorResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readEventsForAdministratorRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readEventsForAdministratorResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readEventsForAdministrator/Fault/DatabaseException")
+    @RequestWrapper(localName = "readEventsForAdministrator", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsForAdministrator")
+    @ResponseWrapper(localName = "readEventsForAdministratorResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsForAdministratorResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readEventsForAdministratorRequest", output = "http://webservices.events.folixa.me/IEventsWS/readEventsForAdministratorResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readEventsForAdministrator/Fault/DatabaseException")
     })
     public List<Event> readEventsForAdministrator(
         @WebParam(name = "validated", targetNamespace = "")
@@ -153,10 +153,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "updateEventById", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UpdateEventById")
-    @ResponseWrapper(localName = "updateEventByIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UpdateEventByIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/updateEventByIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/updateEventByIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/updateEventById/Fault/DatabaseException")
+    @RequestWrapper(localName = "updateEventById", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UpdateEventById")
+    @ResponseWrapper(localName = "updateEventByIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UpdateEventByIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/updateEventByIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/updateEventByIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/updateEventById/Fault/DatabaseException")
     })
     public boolean updateEventById(
         @WebParam(name = "id", targetNamespace = "")
@@ -191,10 +191,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "deleteEventById", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteEventById")
-    @ResponseWrapper(localName = "deleteEventByIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteEventByIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/deleteEventByIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/deleteEventByIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/deleteEventById/Fault/DatabaseException")
+    @RequestWrapper(localName = "deleteEventById", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteEventById")
+    @ResponseWrapper(localName = "deleteEventByIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteEventByIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/deleteEventByIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/deleteEventByIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/deleteEventById/Fault/DatabaseException")
     })
     public boolean deleteEventById(
         @WebParam(name = "id", targetNamespace = "")
@@ -211,10 +211,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readEventById", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventById")
-    @ResponseWrapper(localName = "readEventByIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventByIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readEventByIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readEventByIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readEventById/Fault/DatabaseException")
+    @RequestWrapper(localName = "readEventById", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventById")
+    @ResponseWrapper(localName = "readEventByIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventByIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readEventByIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/readEventByIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readEventById/Fault/DatabaseException")
     })
     public Event readEventById(
         @WebParam(name = "eventId", targetNamespace = "")
@@ -231,10 +231,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readEventsByCategory", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsByCategory")
-    @ResponseWrapper(localName = "readEventsByCategoryResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsByCategoryResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readEventsByCategoryRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readEventsByCategoryResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readEventsByCategory/Fault/DatabaseException")
+    @RequestWrapper(localName = "readEventsByCategory", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsByCategory")
+    @ResponseWrapper(localName = "readEventsByCategoryResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsByCategoryResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readEventsByCategoryRequest", output = "http://webservices.events.folixa.me/IEventsWS/readEventsByCategoryResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readEventsByCategory/Fault/DatabaseException")
     })
     public List<Event> readEventsByCategory(
         @WebParam(name = "categoryId", targetNamespace = "")
@@ -251,10 +251,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readEventsByPlace", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsByPlace")
-    @ResponseWrapper(localName = "readEventsByPlaceResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsByPlaceResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readEventsByPlaceRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readEventsByPlaceResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readEventsByPlace/Fault/DatabaseException")
+    @RequestWrapper(localName = "readEventsByPlace", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsByPlace")
+    @ResponseWrapper(localName = "readEventsByPlaceResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsByPlaceResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readEventsByPlaceRequest", output = "http://webservices.events.folixa.me/IEventsWS/readEventsByPlaceResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readEventsByPlace/Fault/DatabaseException")
     })
     public List<Event> readEventsByPlace(
         @WebParam(name = "place", targetNamespace = "")
@@ -272,10 +272,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readEventsBetweenDates", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsBetweenDates")
-    @ResponseWrapper(localName = "readEventsBetweenDatesResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsBetweenDatesResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readEventsBetweenDatesRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readEventsBetweenDatesResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readEventsBetweenDates/Fault/DatabaseException")
+    @RequestWrapper(localName = "readEventsBetweenDates", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsBetweenDates")
+    @ResponseWrapper(localName = "readEventsBetweenDatesResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsBetweenDatesResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readEventsBetweenDatesRequest", output = "http://webservices.events.folixa.me/IEventsWS/readEventsBetweenDatesResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readEventsBetweenDates/Fault/DatabaseException")
     })
     public List<Event> readEventsBetweenDates(
         @WebParam(name = "startDate", targetNamespace = "")
@@ -298,10 +298,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readEventsAdvancedSearch", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsAdvancedSearch")
-    @ResponseWrapper(localName = "readEventsAdvancedSearchResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsAdvancedSearchResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readEventsAdvancedSearchRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readEventsAdvancedSearchResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readEventsAdvancedSearch/Fault/DatabaseException")
+    @RequestWrapper(localName = "readEventsAdvancedSearch", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsAdvancedSearch")
+    @ResponseWrapper(localName = "readEventsAdvancedSearchResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsAdvancedSearchResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readEventsAdvancedSearchRequest", output = "http://webservices.events.folixa.me/IEventsWS/readEventsAdvancedSearchResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readEventsAdvancedSearch/Fault/DatabaseException")
     })
     public List<Event> readEventsAdvancedSearch(
         @WebParam(name = "text", targetNamespace = "")
@@ -326,10 +326,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readEventsForUsers", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsForUsers")
-    @ResponseWrapper(localName = "readEventsForUsersResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadEventsForUsersResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readEventsForUsersRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readEventsForUsersResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readEventsForUsers/Fault/DatabaseException")
+    @RequestWrapper(localName = "readEventsForUsers", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsForUsers")
+    @ResponseWrapper(localName = "readEventsForUsersResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadEventsForUsersResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readEventsForUsersRequest", output = "http://webservices.events.folixa.me/IEventsWS/readEventsForUsersResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readEventsForUsers/Fault/DatabaseException")
     })
     public List<Event> readEventsForUsers(
         @WebParam(name = "validated", targetNamespace = "")
@@ -346,10 +346,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readImagesByEventId", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadImagesByEventId")
-    @ResponseWrapper(localName = "readImagesByEventIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadImagesByEventIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readImagesByEventIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readImagesByEventIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readImagesByEventId/Fault/DatabaseException")
+    @RequestWrapper(localName = "readImagesByEventId", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadImagesByEventId")
+    @ResponseWrapper(localName = "readImagesByEventIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadImagesByEventIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readImagesByEventIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/readImagesByEventIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readImagesByEventId/Fault/DatabaseException")
     })
     public List<Image> readImagesByEventId(
         @WebParam(name = "eventsId", targetNamespace = "")
@@ -369,10 +369,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "updateImageByEventId", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UpdateImageByEventId")
-    @ResponseWrapper(localName = "updateImageByEventIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UpdateImageByEventIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/updateImageByEventIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/updateImageByEventIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/updateImageByEventId/Fault/DatabaseException")
+    @RequestWrapper(localName = "updateImageByEventId", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UpdateImageByEventId")
+    @ResponseWrapper(localName = "updateImageByEventIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UpdateImageByEventIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/updateImageByEventIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/updateImageByEventIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/updateImageByEventId/Fault/DatabaseException")
     })
     public boolean updateImageByEventId(
         @WebParam(name = "eventsId", targetNamespace = "")
@@ -395,10 +395,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "deleteImagesByEventId", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteImagesByEventId")
-    @ResponseWrapper(localName = "deleteImagesByEventIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteImagesByEventIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/deleteImagesByEventIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/deleteImagesByEventIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/deleteImagesByEventId/Fault/DatabaseException")
+    @RequestWrapper(localName = "deleteImagesByEventId", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteImagesByEventId")
+    @ResponseWrapper(localName = "deleteImagesByEventIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteImagesByEventIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/deleteImagesByEventIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/deleteImagesByEventIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/deleteImagesByEventId/Fault/DatabaseException")
     })
     public boolean deleteImagesByEventId(
         @WebParam(name = "eventsId", targetNamespace = "")
@@ -415,10 +415,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "deleteImagesById", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteImagesById")
-    @ResponseWrapper(localName = "deleteImagesByIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteImagesByIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/deleteImagesByIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/deleteImagesByIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/deleteImagesById/Fault/DatabaseException")
+    @RequestWrapper(localName = "deleteImagesById", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteImagesById")
+    @ResponseWrapper(localName = "deleteImagesByIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteImagesByIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/deleteImagesByIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/deleteImagesByIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/deleteImagesById/Fault/DatabaseException")
     })
     public boolean deleteImagesById(
         @WebParam(name = "id", targetNamespace = "")
@@ -435,10 +435,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "createCategory", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.CreateCategory")
-    @ResponseWrapper(localName = "createCategoryResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.CreateCategoryResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/createCategoryRequest", output = "http://webservices.events.folixame.ws/IEventsWS/createCategoryResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/createCategory/Fault/DatabaseException")
+    @RequestWrapper(localName = "createCategory", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.CreateCategory")
+    @ResponseWrapper(localName = "createCategoryResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.CreateCategoryResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/createCategoryRequest", output = "http://webservices.events.folixa.me/IEventsWS/createCategoryResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/createCategory/Fault/DatabaseException")
     })
     public boolean createCategory(
         @WebParam(name = "name", targetNamespace = "")
@@ -454,10 +454,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "readAllCategories", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadAllCategories")
-    @ResponseWrapper(localName = "readAllCategoriesResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.ReadAllCategoriesResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/readAllCategoriesRequest", output = "http://webservices.events.folixame.ws/IEventsWS/readAllCategoriesResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/readAllCategories/Fault/DatabaseException")
+    @RequestWrapper(localName = "readAllCategories", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadAllCategories")
+    @ResponseWrapper(localName = "readAllCategoriesResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.ReadAllCategoriesResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/readAllCategoriesRequest", output = "http://webservices.events.folixa.me/IEventsWS/readAllCategoriesResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/readAllCategories/Fault/DatabaseException")
     })
     public List<EventsCategories> readAllCategories()
         throws DatabaseException_Exception
@@ -473,10 +473,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "updateCategoryById", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UpdateCategoryById")
-    @ResponseWrapper(localName = "updateCategoryByIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.UpdateCategoryByIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/updateCategoryByIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/updateCategoryByIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/updateCategoryById/Fault/DatabaseException")
+    @RequestWrapper(localName = "updateCategoryById", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UpdateCategoryById")
+    @ResponseWrapper(localName = "updateCategoryByIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.UpdateCategoryByIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/updateCategoryByIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/updateCategoryByIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/updateCategoryById/Fault/DatabaseException")
     })
     public boolean updateCategoryById(
         @WebParam(name = "id", targetNamespace = "")
@@ -495,10 +495,10 @@ public interface IEventsWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "deleteCategoryById", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteCategoryById")
-    @ResponseWrapper(localName = "deleteCategoryByIdResponse", targetNamespace = "http://webservices.events.folixame.ws/", className = "me.folixa.ws.events.DeleteCategoryByIdResponse")
-    @Action(input = "http://webservices.events.folixame.ws/IEventsWS/deleteCategoryByIdRequest", output = "http://webservices.events.folixame.ws/IEventsWS/deleteCategoryByIdResponse", fault = {
-        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixame.ws/IEventsWS/deleteCategoryById/Fault/DatabaseException")
+    @RequestWrapper(localName = "deleteCategoryById", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteCategoryById")
+    @ResponseWrapper(localName = "deleteCategoryByIdResponse", targetNamespace = "http://webservices.events.folixa.me/", className = "me.folixa.ws.events.DeleteCategoryByIdResponse")
+    @Action(input = "http://webservices.events.folixa.me/IEventsWS/deleteCategoryByIdRequest", output = "http://webservices.events.folixa.me/IEventsWS/deleteCategoryByIdResponse", fault = {
+        @FaultAction(className = DatabaseException_Exception.class, value = "http://webservices.events.folixa.me/IEventsWS/deleteCategoryById/Fault/DatabaseException")
     })
     public boolean deleteCategoryById(
         @WebParam(name = "id", targetNamespace = "")

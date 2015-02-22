@@ -46,6 +46,10 @@ public class IndexServlet extends HttpServlet {
 		req.setAttribute("places", places);
 		req.setAttribute("categories", categories);
 		req.setAttribute("nextEvents", events);
+		if (req.getSession().getAttribute("permission") == null) {
+			req.getSession().setAttribute("permission", "anonymous");
+		}
+	
 		req.getRequestDispatcher("index.jsp").forward(req, resp);
 	}
 	

@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "DatabaseException", targetNamespace = "http://webservices.events.folixame.ws/")
+@WebFault(name = "DatabaseException", targetNamespace = "http://webservices.events.folixa.me/")
 public class DatabaseException_Exception
     extends Exception
 {

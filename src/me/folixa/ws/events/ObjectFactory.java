@@ -24,47 +24,47 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _CreateImageResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "createImageResponse");
-    private final static QName _ReadEventsBetweenDates_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsBetweenDates");
-    private final static QName _UpdateEventById_QNAME = new QName("http://webservices.events.folixame.ws/", "updateEventById");
-    private final static QName _CreateEventResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "createEventResponse");
-    private final static QName _DatabaseException_QNAME = new QName("http://webservices.events.folixame.ws/", "DatabaseException");
-    private final static QName _ReadImagesByEventIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readImagesByEventIdResponse");
-    private final static QName _ReadEventsForUsers_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsForUsers");
-    private final static QName _ReadEventsAdvancedSearch_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsAdvancedSearch");
-    private final static QName _CreateCategoryResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "createCategoryResponse");
-    private final static QName _ReadAllCategories_QNAME = new QName("http://webservices.events.folixame.ws/", "readAllCategories");
-    private final static QName _CreateImage_QNAME = new QName("http://webservices.events.folixame.ws/", "createImage");
-    private final static QName _ReadEventsBetweenDatesResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsBetweenDatesResponse");
-    private final static QName _DeleteImagesByIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteImagesByIdResponse");
-    private final static QName _UpdateCategoryById_QNAME = new QName("http://webservices.events.folixame.ws/", "updateCategoryById");
-    private final static QName _ReadEventsByPlace_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsByPlace");
-    private final static QName _ReadImagesByEventId_QNAME = new QName("http://webservices.events.folixame.ws/", "readImagesByEventId");
-    private final static QName _ReadEventsForAdministrator_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsForAdministrator");
-    private final static QName _DeleteEventByIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteEventByIdResponse");
-    private final static QName _DeleteImagesById_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteImagesById");
-    private final static QName _ReadEventsByCategory_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsByCategory");
-    private final static QName _ReadEventsForUsersResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsForUsersResponse");
-    private final static QName _DeleteEventById_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteEventById");
-    private final static QName _ReadEventsByCategoryResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsByCategoryResponse");
-    private final static QName _UpdateImageByEventId_QNAME = new QName("http://webservices.events.folixame.ws/", "updateImageByEventId");
-    private final static QName _DeleteImagesByEventIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteImagesByEventIdResponse");
-    private final static QName _DeleteCategoryByIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteCategoryByIdResponse");
-    private final static QName _ReadAllCategoriesResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readAllCategoriesResponse");
-    private final static QName _ReadEventByIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventByIdResponse");
-    private final static QName _ReadEventsAdvancedSearchResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsAdvancedSearchResponse");
-    private final static QName _DeleteImagesByEventId_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteImagesByEventId");
-    private final static QName _UploadImageResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "uploadImageResponse");
-    private final static QName _ReadEventsForAdministratorResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsForAdministratorResponse");
-    private final static QName _UploadImage_QNAME = new QName("http://webservices.events.folixame.ws/", "uploadImage");
-    private final static QName _CreateCategory_QNAME = new QName("http://webservices.events.folixame.ws/", "createCategory");
-    private final static QName _CreateEvent_QNAME = new QName("http://webservices.events.folixame.ws/", "createEvent");
-    private final static QName _ReadEventById_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventById");
-    private final static QName _UpdateCategoryByIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "updateCategoryByIdResponse");
-    private final static QName _UpdateImageByEventIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "updateImageByEventIdResponse");
-    private final static QName _UpdateEventByIdResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "updateEventByIdResponse");
-    private final static QName _DeleteCategoryById_QNAME = new QName("http://webservices.events.folixame.ws/", "deleteCategoryById");
-    private final static QName _ReadEventsByPlaceResponse_QNAME = new QName("http://webservices.events.folixame.ws/", "readEventsByPlaceResponse");
+    private final static QName _ReadEventById_QNAME = new QName("http://webservices.events.folixa.me/", "readEventById");
+    private final static QName _UpdateCategoryByIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "updateCategoryByIdResponse");
+    private final static QName _UpdateImageByEventIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "updateImageByEventIdResponse");
+    private final static QName _UpdateEventByIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "updateEventByIdResponse");
+    private final static QName _DeleteCategoryById_QNAME = new QName("http://webservices.events.folixa.me/", "deleteCategoryById");
+    private final static QName _ReadEventsByPlaceResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsByPlaceResponse");
+    private final static QName _DeleteEventById_QNAME = new QName("http://webservices.events.folixa.me/", "deleteEventById");
+    private final static QName _ReadEventsByCategoryResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsByCategoryResponse");
+    private final static QName _UpdateImageByEventId_QNAME = new QName("http://webservices.events.folixa.me/", "updateImageByEventId");
+    private final static QName _DeleteImagesByEventIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "deleteImagesByEventIdResponse");
+    private final static QName _DeleteCategoryByIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "deleteCategoryByIdResponse");
+    private final static QName _ReadAllCategoriesResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readAllCategoriesResponse");
+    private final static QName _ReadEventByIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readEventByIdResponse");
+    private final static QName _ReadEventsAdvancedSearchResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsAdvancedSearchResponse");
+    private final static QName _DeleteImagesByEventId_QNAME = new QName("http://webservices.events.folixa.me/", "deleteImagesByEventId");
+    private final static QName _UploadImageResponse_QNAME = new QName("http://webservices.events.folixa.me/", "uploadImageResponse");
+    private final static QName _ReadEventsForAdministratorResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsForAdministratorResponse");
+    private final static QName _UploadImage_QNAME = new QName("http://webservices.events.folixa.me/", "uploadImage");
+    private final static QName _CreateCategory_QNAME = new QName("http://webservices.events.folixa.me/", "createCategory");
+    private final static QName _CreateEvent_QNAME = new QName("http://webservices.events.folixa.me/", "createEvent");
+    private final static QName _ReadEventsAdvancedSearch_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsAdvancedSearch");
+    private final static QName _CreateCategoryResponse_QNAME = new QName("http://webservices.events.folixa.me/", "createCategoryResponse");
+    private final static QName _ReadAllCategories_QNAME = new QName("http://webservices.events.folixa.me/", "readAllCategories");
+    private final static QName _CreateImage_QNAME = new QName("http://webservices.events.folixa.me/", "createImage");
+    private final static QName _ReadEventsBetweenDatesResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsBetweenDatesResponse");
+    private final static QName _DeleteImagesByIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "deleteImagesByIdResponse");
+    private final static QName _UpdateCategoryById_QNAME = new QName("http://webservices.events.folixa.me/", "updateCategoryById");
+    private final static QName _ReadEventsByPlace_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsByPlace");
+    private final static QName _ReadImagesByEventId_QNAME = new QName("http://webservices.events.folixa.me/", "readImagesByEventId");
+    private final static QName _ReadEventsForAdministrator_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsForAdministrator");
+    private final static QName _DeleteEventByIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "deleteEventByIdResponse");
+    private final static QName _DeleteImagesById_QNAME = new QName("http://webservices.events.folixa.me/", "deleteImagesById");
+    private final static QName _ReadEventsByCategory_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsByCategory");
+    private final static QName _ReadEventsForUsersResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsForUsersResponse");
+    private final static QName _CreateImageResponse_QNAME = new QName("http://webservices.events.folixa.me/", "createImageResponse");
+    private final static QName _ReadEventsBetweenDates_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsBetweenDates");
+    private final static QName _UpdateEventById_QNAME = new QName("http://webservices.events.folixa.me/", "updateEventById");
+    private final static QName _CreateEventResponse_QNAME = new QName("http://webservices.events.folixa.me/", "createEventResponse");
+    private final static QName _DatabaseException_QNAME = new QName("http://webservices.events.folixa.me/", "DatabaseException");
+    private final static QName _ReadImagesByEventIdResponse_QNAME = new QName("http://webservices.events.folixa.me/", "readImagesByEventIdResponse");
+    private final static QName _ReadEventsForUsers_QNAME = new QName("http://webservices.events.folixa.me/", "readEventsForUsers");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: me.folixa.ws.events
@@ -426,325 +426,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateImageResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "createImageResponse")
-    public JAXBElement<CreateImageResponse> createCreateImageResponse(CreateImageResponse value) {
-        return new JAXBElement<CreateImageResponse>(_CreateImageResponse_QNAME, CreateImageResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsBetweenDates }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsBetweenDates")
-    public JAXBElement<ReadEventsBetweenDates> createReadEventsBetweenDates(ReadEventsBetweenDates value) {
-        return new JAXBElement<ReadEventsBetweenDates>(_ReadEventsBetweenDates_QNAME, ReadEventsBetweenDates.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateEventById }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "updateEventById")
-    public JAXBElement<UpdateEventById> createUpdateEventById(UpdateEventById value) {
-        return new JAXBElement<UpdateEventById>(_UpdateEventById_QNAME, UpdateEventById.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateEventResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "createEventResponse")
-    public JAXBElement<CreateEventResponse> createCreateEventResponse(CreateEventResponse value) {
-        return new JAXBElement<CreateEventResponse>(_CreateEventResponse_QNAME, CreateEventResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DatabaseException }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "DatabaseException")
-    public JAXBElement<DatabaseException> createDatabaseException(DatabaseException value) {
-        return new JAXBElement<DatabaseException>(_DatabaseException_QNAME, DatabaseException.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadImagesByEventIdResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readImagesByEventIdResponse")
-    public JAXBElement<ReadImagesByEventIdResponse> createReadImagesByEventIdResponse(ReadImagesByEventIdResponse value) {
-        return new JAXBElement<ReadImagesByEventIdResponse>(_ReadImagesByEventIdResponse_QNAME, ReadImagesByEventIdResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForUsers }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsForUsers")
-    public JAXBElement<ReadEventsForUsers> createReadEventsForUsers(ReadEventsForUsers value) {
-        return new JAXBElement<ReadEventsForUsers>(_ReadEventsForUsers_QNAME, ReadEventsForUsers.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsAdvancedSearch }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsAdvancedSearch")
-    public JAXBElement<ReadEventsAdvancedSearch> createReadEventsAdvancedSearch(ReadEventsAdvancedSearch value) {
-        return new JAXBElement<ReadEventsAdvancedSearch>(_ReadEventsAdvancedSearch_QNAME, ReadEventsAdvancedSearch.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateCategoryResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "createCategoryResponse")
-    public JAXBElement<CreateCategoryResponse> createCreateCategoryResponse(CreateCategoryResponse value) {
-        return new JAXBElement<CreateCategoryResponse>(_CreateCategoryResponse_QNAME, CreateCategoryResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadAllCategories }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readAllCategories")
-    public JAXBElement<ReadAllCategories> createReadAllCategories(ReadAllCategories value) {
-        return new JAXBElement<ReadAllCategories>(_ReadAllCategories_QNAME, ReadAllCategories.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateImage }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "createImage")
-    public JAXBElement<CreateImage> createCreateImage(CreateImage value) {
-        return new JAXBElement<CreateImage>(_CreateImage_QNAME, CreateImage.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsBetweenDatesResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsBetweenDatesResponse")
-    public JAXBElement<ReadEventsBetweenDatesResponse> createReadEventsBetweenDatesResponse(ReadEventsBetweenDatesResponse value) {
-        return new JAXBElement<ReadEventsBetweenDatesResponse>(_ReadEventsBetweenDatesResponse_QNAME, ReadEventsBetweenDatesResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesByIdResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteImagesByIdResponse")
-    public JAXBElement<DeleteImagesByIdResponse> createDeleteImagesByIdResponse(DeleteImagesByIdResponse value) {
-        return new JAXBElement<DeleteImagesByIdResponse>(_DeleteImagesByIdResponse_QNAME, DeleteImagesByIdResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateCategoryById }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "updateCategoryById")
-    public JAXBElement<UpdateCategoryById> createUpdateCategoryById(UpdateCategoryById value) {
-        return new JAXBElement<UpdateCategoryById>(_UpdateCategoryById_QNAME, UpdateCategoryById.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsByPlace }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsByPlace")
-    public JAXBElement<ReadEventsByPlace> createReadEventsByPlace(ReadEventsByPlace value) {
-        return new JAXBElement<ReadEventsByPlace>(_ReadEventsByPlace_QNAME, ReadEventsByPlace.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadImagesByEventId }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readImagesByEventId")
-    public JAXBElement<ReadImagesByEventId> createReadImagesByEventId(ReadImagesByEventId value) {
-        return new JAXBElement<ReadImagesByEventId>(_ReadImagesByEventId_QNAME, ReadImagesByEventId.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForAdministrator }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsForAdministrator")
-    public JAXBElement<ReadEventsForAdministrator> createReadEventsForAdministrator(ReadEventsForAdministrator value) {
-        return new JAXBElement<ReadEventsForAdministrator>(_ReadEventsForAdministrator_QNAME, ReadEventsForAdministrator.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteEventByIdResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteEventByIdResponse")
-    public JAXBElement<DeleteEventByIdResponse> createDeleteEventByIdResponse(DeleteEventByIdResponse value) {
-        return new JAXBElement<DeleteEventByIdResponse>(_DeleteEventByIdResponse_QNAME, DeleteEventByIdResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesById }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteImagesById")
-    public JAXBElement<DeleteImagesById> createDeleteImagesById(DeleteImagesById value) {
-        return new JAXBElement<DeleteImagesById>(_DeleteImagesById_QNAME, DeleteImagesById.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsByCategory }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsByCategory")
-    public JAXBElement<ReadEventsByCategory> createReadEventsByCategory(ReadEventsByCategory value) {
-        return new JAXBElement<ReadEventsByCategory>(_ReadEventsByCategory_QNAME, ReadEventsByCategory.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForUsersResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsForUsersResponse")
-    public JAXBElement<ReadEventsForUsersResponse> createReadEventsForUsersResponse(ReadEventsForUsersResponse value) {
-        return new JAXBElement<ReadEventsForUsersResponse>(_ReadEventsForUsersResponse_QNAME, ReadEventsForUsersResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteEventById }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteEventById")
-    public JAXBElement<DeleteEventById> createDeleteEventById(DeleteEventById value) {
-        return new JAXBElement<DeleteEventById>(_DeleteEventById_QNAME, DeleteEventById.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsByCategoryResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsByCategoryResponse")
-    public JAXBElement<ReadEventsByCategoryResponse> createReadEventsByCategoryResponse(ReadEventsByCategoryResponse value) {
-        return new JAXBElement<ReadEventsByCategoryResponse>(_ReadEventsByCategoryResponse_QNAME, ReadEventsByCategoryResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateImageByEventId }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "updateImageByEventId")
-    public JAXBElement<UpdateImageByEventId> createUpdateImageByEventId(UpdateImageByEventId value) {
-        return new JAXBElement<UpdateImageByEventId>(_UpdateImageByEventId_QNAME, UpdateImageByEventId.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesByEventIdResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteImagesByEventIdResponse")
-    public JAXBElement<DeleteImagesByEventIdResponse> createDeleteImagesByEventIdResponse(DeleteImagesByEventIdResponse value) {
-        return new JAXBElement<DeleteImagesByEventIdResponse>(_DeleteImagesByEventIdResponse_QNAME, DeleteImagesByEventIdResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteCategoryByIdResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteCategoryByIdResponse")
-    public JAXBElement<DeleteCategoryByIdResponse> createDeleteCategoryByIdResponse(DeleteCategoryByIdResponse value) {
-        return new JAXBElement<DeleteCategoryByIdResponse>(_DeleteCategoryByIdResponse_QNAME, DeleteCategoryByIdResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadAllCategoriesResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readAllCategoriesResponse")
-    public JAXBElement<ReadAllCategoriesResponse> createReadAllCategoriesResponse(ReadAllCategoriesResponse value) {
-        return new JAXBElement<ReadAllCategoriesResponse>(_ReadAllCategoriesResponse_QNAME, ReadAllCategoriesResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventByIdResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventByIdResponse")
-    public JAXBElement<ReadEventByIdResponse> createReadEventByIdResponse(ReadEventByIdResponse value) {
-        return new JAXBElement<ReadEventByIdResponse>(_ReadEventByIdResponse_QNAME, ReadEventByIdResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsAdvancedSearchResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsAdvancedSearchResponse")
-    public JAXBElement<ReadEventsAdvancedSearchResponse> createReadEventsAdvancedSearchResponse(ReadEventsAdvancedSearchResponse value) {
-        return new JAXBElement<ReadEventsAdvancedSearchResponse>(_ReadEventsAdvancedSearchResponse_QNAME, ReadEventsAdvancedSearchResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesByEventId }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteImagesByEventId")
-    public JAXBElement<DeleteImagesByEventId> createDeleteImagesByEventId(DeleteImagesByEventId value) {
-        return new JAXBElement<DeleteImagesByEventId>(_DeleteImagesByEventId_QNAME, DeleteImagesByEventId.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UploadImageResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "uploadImageResponse")
-    public JAXBElement<UploadImageResponse> createUploadImageResponse(UploadImageResponse value) {
-        return new JAXBElement<UploadImageResponse>(_UploadImageResponse_QNAME, UploadImageResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForAdministratorResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsForAdministratorResponse")
-    public JAXBElement<ReadEventsForAdministratorResponse> createReadEventsForAdministratorResponse(ReadEventsForAdministratorResponse value) {
-        return new JAXBElement<ReadEventsForAdministratorResponse>(_ReadEventsForAdministratorResponse_QNAME, ReadEventsForAdministratorResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UploadImage }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "uploadImage")
-    public JAXBElement<UploadImage> createUploadImage(UploadImage value) {
-        return new JAXBElement<UploadImage>(_UploadImage_QNAME, UploadImage.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateCategory }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "createCategory")
-    public JAXBElement<CreateCategory> createCreateCategory(CreateCategory value) {
-        return new JAXBElement<CreateCategory>(_CreateCategory_QNAME, CreateCategory.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateEvent }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "createEvent")
-    public JAXBElement<CreateEvent> createCreateEvent(CreateEvent value) {
-        return new JAXBElement<CreateEvent>(_CreateEvent_QNAME, CreateEvent.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventById }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventById")
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventById")
     public JAXBElement<ReadEventById> createReadEventById(ReadEventById value) {
         return new JAXBElement<ReadEventById>(_ReadEventById_QNAME, ReadEventById.class, null, value);
     }
@@ -753,7 +438,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateCategoryByIdResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "updateCategoryByIdResponse")
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "updateCategoryByIdResponse")
     public JAXBElement<UpdateCategoryByIdResponse> createUpdateCategoryByIdResponse(UpdateCategoryByIdResponse value) {
         return new JAXBElement<UpdateCategoryByIdResponse>(_UpdateCategoryByIdResponse_QNAME, UpdateCategoryByIdResponse.class, null, value);
     }
@@ -762,7 +447,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateImageByEventIdResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "updateImageByEventIdResponse")
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "updateImageByEventIdResponse")
     public JAXBElement<UpdateImageByEventIdResponse> createUpdateImageByEventIdResponse(UpdateImageByEventIdResponse value) {
         return new JAXBElement<UpdateImageByEventIdResponse>(_UpdateImageByEventIdResponse_QNAME, UpdateImageByEventIdResponse.class, null, value);
     }
@@ -771,7 +456,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateEventByIdResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "updateEventByIdResponse")
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "updateEventByIdResponse")
     public JAXBElement<UpdateEventByIdResponse> createUpdateEventByIdResponse(UpdateEventByIdResponse value) {
         return new JAXBElement<UpdateEventByIdResponse>(_UpdateEventByIdResponse_QNAME, UpdateEventByIdResponse.class, null, value);
     }
@@ -780,7 +465,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteCategoryById }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "deleteCategoryById")
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteCategoryById")
     public JAXBElement<DeleteCategoryById> createDeleteCategoryById(DeleteCategoryById value) {
         return new JAXBElement<DeleteCategoryById>(_DeleteCategoryById_QNAME, DeleteCategoryById.class, null, value);
     }
@@ -789,9 +474,324 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsByPlaceResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservices.events.folixame.ws/", name = "readEventsByPlaceResponse")
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsByPlaceResponse")
     public JAXBElement<ReadEventsByPlaceResponse> createReadEventsByPlaceResponse(ReadEventsByPlaceResponse value) {
         return new JAXBElement<ReadEventsByPlaceResponse>(_ReadEventsByPlaceResponse_QNAME, ReadEventsByPlaceResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteEventById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteEventById")
+    public JAXBElement<DeleteEventById> createDeleteEventById(DeleteEventById value) {
+        return new JAXBElement<DeleteEventById>(_DeleteEventById_QNAME, DeleteEventById.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsByCategoryResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsByCategoryResponse")
+    public JAXBElement<ReadEventsByCategoryResponse> createReadEventsByCategoryResponse(ReadEventsByCategoryResponse value) {
+        return new JAXBElement<ReadEventsByCategoryResponse>(_ReadEventsByCategoryResponse_QNAME, ReadEventsByCategoryResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateImageByEventId }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "updateImageByEventId")
+    public JAXBElement<UpdateImageByEventId> createUpdateImageByEventId(UpdateImageByEventId value) {
+        return new JAXBElement<UpdateImageByEventId>(_UpdateImageByEventId_QNAME, UpdateImageByEventId.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesByEventIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteImagesByEventIdResponse")
+    public JAXBElement<DeleteImagesByEventIdResponse> createDeleteImagesByEventIdResponse(DeleteImagesByEventIdResponse value) {
+        return new JAXBElement<DeleteImagesByEventIdResponse>(_DeleteImagesByEventIdResponse_QNAME, DeleteImagesByEventIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteCategoryByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteCategoryByIdResponse")
+    public JAXBElement<DeleteCategoryByIdResponse> createDeleteCategoryByIdResponse(DeleteCategoryByIdResponse value) {
+        return new JAXBElement<DeleteCategoryByIdResponse>(_DeleteCategoryByIdResponse_QNAME, DeleteCategoryByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadAllCategoriesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readAllCategoriesResponse")
+    public JAXBElement<ReadAllCategoriesResponse> createReadAllCategoriesResponse(ReadAllCategoriesResponse value) {
+        return new JAXBElement<ReadAllCategoriesResponse>(_ReadAllCategoriesResponse_QNAME, ReadAllCategoriesResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventByIdResponse")
+    public JAXBElement<ReadEventByIdResponse> createReadEventByIdResponse(ReadEventByIdResponse value) {
+        return new JAXBElement<ReadEventByIdResponse>(_ReadEventByIdResponse_QNAME, ReadEventByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsAdvancedSearchResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsAdvancedSearchResponse")
+    public JAXBElement<ReadEventsAdvancedSearchResponse> createReadEventsAdvancedSearchResponse(ReadEventsAdvancedSearchResponse value) {
+        return new JAXBElement<ReadEventsAdvancedSearchResponse>(_ReadEventsAdvancedSearchResponse_QNAME, ReadEventsAdvancedSearchResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesByEventId }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteImagesByEventId")
+    public JAXBElement<DeleteImagesByEventId> createDeleteImagesByEventId(DeleteImagesByEventId value) {
+        return new JAXBElement<DeleteImagesByEventId>(_DeleteImagesByEventId_QNAME, DeleteImagesByEventId.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UploadImageResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "uploadImageResponse")
+    public JAXBElement<UploadImageResponse> createUploadImageResponse(UploadImageResponse value) {
+        return new JAXBElement<UploadImageResponse>(_UploadImageResponse_QNAME, UploadImageResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForAdministratorResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsForAdministratorResponse")
+    public JAXBElement<ReadEventsForAdministratorResponse> createReadEventsForAdministratorResponse(ReadEventsForAdministratorResponse value) {
+        return new JAXBElement<ReadEventsForAdministratorResponse>(_ReadEventsForAdministratorResponse_QNAME, ReadEventsForAdministratorResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UploadImage }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "uploadImage")
+    public JAXBElement<UploadImage> createUploadImage(UploadImage value) {
+        return new JAXBElement<UploadImage>(_UploadImage_QNAME, UploadImage.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateCategory }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "createCategory")
+    public JAXBElement<CreateCategory> createCreateCategory(CreateCategory value) {
+        return new JAXBElement<CreateCategory>(_CreateCategory_QNAME, CreateCategory.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateEvent }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "createEvent")
+    public JAXBElement<CreateEvent> createCreateEvent(CreateEvent value) {
+        return new JAXBElement<CreateEvent>(_CreateEvent_QNAME, CreateEvent.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsAdvancedSearch }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsAdvancedSearch")
+    public JAXBElement<ReadEventsAdvancedSearch> createReadEventsAdvancedSearch(ReadEventsAdvancedSearch value) {
+        return new JAXBElement<ReadEventsAdvancedSearch>(_ReadEventsAdvancedSearch_QNAME, ReadEventsAdvancedSearch.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateCategoryResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "createCategoryResponse")
+    public JAXBElement<CreateCategoryResponse> createCreateCategoryResponse(CreateCategoryResponse value) {
+        return new JAXBElement<CreateCategoryResponse>(_CreateCategoryResponse_QNAME, CreateCategoryResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadAllCategories }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readAllCategories")
+    public JAXBElement<ReadAllCategories> createReadAllCategories(ReadAllCategories value) {
+        return new JAXBElement<ReadAllCategories>(_ReadAllCategories_QNAME, ReadAllCategories.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateImage }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "createImage")
+    public JAXBElement<CreateImage> createCreateImage(CreateImage value) {
+        return new JAXBElement<CreateImage>(_CreateImage_QNAME, CreateImage.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsBetweenDatesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsBetweenDatesResponse")
+    public JAXBElement<ReadEventsBetweenDatesResponse> createReadEventsBetweenDatesResponse(ReadEventsBetweenDatesResponse value) {
+        return new JAXBElement<ReadEventsBetweenDatesResponse>(_ReadEventsBetweenDatesResponse_QNAME, ReadEventsBetweenDatesResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteImagesByIdResponse")
+    public JAXBElement<DeleteImagesByIdResponse> createDeleteImagesByIdResponse(DeleteImagesByIdResponse value) {
+        return new JAXBElement<DeleteImagesByIdResponse>(_DeleteImagesByIdResponse_QNAME, DeleteImagesByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateCategoryById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "updateCategoryById")
+    public JAXBElement<UpdateCategoryById> createUpdateCategoryById(UpdateCategoryById value) {
+        return new JAXBElement<UpdateCategoryById>(_UpdateCategoryById_QNAME, UpdateCategoryById.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsByPlace }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsByPlace")
+    public JAXBElement<ReadEventsByPlace> createReadEventsByPlace(ReadEventsByPlace value) {
+        return new JAXBElement<ReadEventsByPlace>(_ReadEventsByPlace_QNAME, ReadEventsByPlace.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadImagesByEventId }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readImagesByEventId")
+    public JAXBElement<ReadImagesByEventId> createReadImagesByEventId(ReadImagesByEventId value) {
+        return new JAXBElement<ReadImagesByEventId>(_ReadImagesByEventId_QNAME, ReadImagesByEventId.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForAdministrator }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsForAdministrator")
+    public JAXBElement<ReadEventsForAdministrator> createReadEventsForAdministrator(ReadEventsForAdministrator value) {
+        return new JAXBElement<ReadEventsForAdministrator>(_ReadEventsForAdministrator_QNAME, ReadEventsForAdministrator.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteEventByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteEventByIdResponse")
+    public JAXBElement<DeleteEventByIdResponse> createDeleteEventByIdResponse(DeleteEventByIdResponse value) {
+        return new JAXBElement<DeleteEventByIdResponse>(_DeleteEventByIdResponse_QNAME, DeleteEventByIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteImagesById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "deleteImagesById")
+    public JAXBElement<DeleteImagesById> createDeleteImagesById(DeleteImagesById value) {
+        return new JAXBElement<DeleteImagesById>(_DeleteImagesById_QNAME, DeleteImagesById.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsByCategory }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsByCategory")
+    public JAXBElement<ReadEventsByCategory> createReadEventsByCategory(ReadEventsByCategory value) {
+        return new JAXBElement<ReadEventsByCategory>(_ReadEventsByCategory_QNAME, ReadEventsByCategory.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForUsersResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsForUsersResponse")
+    public JAXBElement<ReadEventsForUsersResponse> createReadEventsForUsersResponse(ReadEventsForUsersResponse value) {
+        return new JAXBElement<ReadEventsForUsersResponse>(_ReadEventsForUsersResponse_QNAME, ReadEventsForUsersResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateImageResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "createImageResponse")
+    public JAXBElement<CreateImageResponse> createCreateImageResponse(CreateImageResponse value) {
+        return new JAXBElement<CreateImageResponse>(_CreateImageResponse_QNAME, CreateImageResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsBetweenDates }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsBetweenDates")
+    public JAXBElement<ReadEventsBetweenDates> createReadEventsBetweenDates(ReadEventsBetweenDates value) {
+        return new JAXBElement<ReadEventsBetweenDates>(_ReadEventsBetweenDates_QNAME, ReadEventsBetweenDates.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateEventById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "updateEventById")
+    public JAXBElement<UpdateEventById> createUpdateEventById(UpdateEventById value) {
+        return new JAXBElement<UpdateEventById>(_UpdateEventById_QNAME, UpdateEventById.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateEventResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "createEventResponse")
+    public JAXBElement<CreateEventResponse> createCreateEventResponse(CreateEventResponse value) {
+        return new JAXBElement<CreateEventResponse>(_CreateEventResponse_QNAME, CreateEventResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DatabaseException }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "DatabaseException")
+    public JAXBElement<DatabaseException> createDatabaseException(DatabaseException value) {
+        return new JAXBElement<DatabaseException>(_DatabaseException_QNAME, DatabaseException.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadImagesByEventIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readImagesByEventIdResponse")
+    public JAXBElement<ReadImagesByEventIdResponse> createReadImagesByEventIdResponse(ReadImagesByEventIdResponse value) {
+        return new JAXBElement<ReadImagesByEventIdResponse>(_ReadImagesByEventIdResponse_QNAME, ReadImagesByEventIdResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadEventsForUsers }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.events.folixa.me/", name = "readEventsForUsers")
+    public JAXBElement<ReadEventsForUsers> createReadEventsForUsers(ReadEventsForUsers value) {
+        return new JAXBElement<ReadEventsForUsers>(_ReadEventsForUsers_QNAME, ReadEventsForUsers.class, null, value);
     }
 
 }
