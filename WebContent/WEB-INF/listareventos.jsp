@@ -50,12 +50,14 @@
 	                              <td>${event.longDescription}</td>
 	                              <td>categoria</td>
 	                              <td>
-	                              	<form action="modificareventos" method="post">
+	                              	<form action="modificareventos" method="get">
+	                              		<input type="hidden" name="eventIdUpdate" value="${event.id}">
 	                              		<input class="btn btn-primary" type="submit" value="Modificar"/>
 	                              	</form>
 	                              </td>
 	                              <td>
-	                              	<form action="" method="post">
+	                              	<form action="" method="get">
+	                              		<input type="hidden" name="eventIdDelete" value="${event.id}">
 	                              		<input class="btn btn-danger" type="submit" value="Borrar"/>
 	                              	</form>
 	                              </td>

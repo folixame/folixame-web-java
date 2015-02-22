@@ -193,4 +193,21 @@ public class EventsWSClient {
 		}
 		return false;
 	}
+
+	public void updateEvent(int id, String name, String place, String startDate,
+			String endDate, String category, String shortDescription,
+			String longDescription) {
+		
+		XMLGregorianCalendar eventDateXML = toXmlGregorianDate(startDate);
+		XMLGregorianCalendar startDateXML = toXmlGregorianDate(startDate);
+		XMLGregorianCalendar endDateXML = toXmlGregorianDate(endDate);
+		
+		try {
+			eventsws.updateEventById(id, name, place, shortDescription, longDescription, 9, eventDateXML, startDateXML, endDateXML, 1);
+		} catch (DatabaseException_Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// TODO categoria
+	}
 }
