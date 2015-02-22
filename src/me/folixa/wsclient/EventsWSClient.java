@@ -10,11 +10,11 @@ import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import me.folixa.ws.DatabaseException_Exception;
-import me.folixa.ws.Event;
-import me.folixa.ws.EventsCategories;
-import me.folixa.ws.EventsWSService;
-import me.folixa.ws.IEventsWS;
+import me.folixa.ws.events.DatabaseException_Exception;
+import me.folixa.ws.events.Event;
+import me.folixa.ws.events.EventsCategories;
+import me.folixa.ws.events.EventsWSService;
+import me.folixa.ws.events.IEventsWS;
 
 public class EventsWSClient {
 	private EventsWSService service;

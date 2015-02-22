@@ -4,8 +4,6 @@
 package me.folixa.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,13 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sun.mail.iap.Response;
-
-import me.folixa.ws.Event;
-import me.folixa.ws.EventsCategories;
-import me.folixa.ws.EventsWSService;
-import me.folixa.ws.Users;
-import me.folixa.wsclient.EventsWSClient;
 import me.folixa.wsclient.UsersWSClient;
 
 /**
@@ -53,10 +44,13 @@ public class LoginServlet extends HttpServlet {
 		if (client.logIn(email, password)) {
 			req.getSession().setAttribute("email", email);
 			req.getSession().setAttribute("password", password); // :'( ... el tiempo apremia. TODO fix
-			req.getSession().setAttribute("loggedIn", "user");
+			req.getSession().setAttribute("permission", "user");
 			resp.sendRedirect("index");
-			
+			if (client.isAdmin(email)) {
+				req.getSession().setAttribute("permission", "admin");
+			}
 		} else {
+			req.getSession().setAttribute("permission", "anonymous");
 			req.setAttribute("error", "Bad login.");
 			req.getRequestDispatcher("login.jsp").forward(req, resp);
 		}

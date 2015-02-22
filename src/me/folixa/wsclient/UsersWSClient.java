@@ -1,8 +1,8 @@
 package me.folixa.wsclient;
 
-import me.folixa.ws.Security;
-import me.folixa.ws.Users;
-import me.folixa.ws.UsersSoap;
+import me.folixa.ws.users.Security;
+import me.folixa.ws.users.Users;
+import me.folixa.ws.users.UsersSoap;
 
 public class UsersWSClient {
 	private Security security;
@@ -11,7 +11,7 @@ public class UsersWSClient {
 	
 	public UsersWSClient() {
 		security = new Security();
-		service = new Users().getUsersSoap();
+		service = new Users().getUsersSoap12();
 	}
 
 	public void SignUp(String email, String password) {
@@ -22,8 +22,13 @@ public class UsersWSClient {
 		security.setEmail(email);
 		security.setPassword(password);
 		String resp = service.logIn(security);
-		System.out.println(resp);
+
 		return resp.equals("OK")? true : false;
+	}
+	
+	public boolean isAdmin(String email) {
+		String resp = service.getUserPermission(email);
+		return resp.equals("admin") ? true : false;
 	}
 	
 }

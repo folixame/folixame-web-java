@@ -1,4 +1,3 @@
-<%@page import="me.folixa.ws.Event"%>
 <%@page import="java.util.Calendar"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -68,6 +67,11 @@
 					${event.endDate.getDay()}-${event.endDate.getMonth()}-${event.endDate.getYear()}</span></li>
                 </ul>
               </div>
+              <div class="social">
+				<ul>
+				  <li class="star" style="width:33%;"><a href="#star"><span class="fa fa-star-o"></span></a></li>
+				</ul>
+			  </div>
             </li>	
           </c:forEach>
           </ul>
