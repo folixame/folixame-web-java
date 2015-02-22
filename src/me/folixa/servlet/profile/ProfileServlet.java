@@ -39,7 +39,7 @@ public class ProfileServlet extends HttpServlet {
 		List<Favourite> favs = usersClient.getFavourites(email);
 		List<Event> events = new ArrayList<Event>();
 		for (Favourite fav : favs) {
-			int eventId = Integer.parseInt(fav.getEventId());
+			int eventId = fav.getEventId();
 			events.add(eventsClient.getEventById(eventId));
 		}
 

@@ -3,21 +3,21 @@ package me.folixa.ws.users;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para Favourite complex type.
+ * <p>Clase Java para anonymous complex type.
  * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="Favourite">
+ * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="userId" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="eventId" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -28,47 +28,38 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Favourite", propOrder = {
-    "id",
-    "userId",
+@XmlType(name = "", propOrder = {
+    "email",
     "eventId"
 })
-public class Favourite {
+@XmlRootElement(name = "AddFavourite")
+public class AddFavourite {
 
-    protected int id;
-    protected int userId;
+    protected String email;
     protected int eventId;
 
     /**
-     * Obtiene el valor de la propiedad id.
+     * Obtiene el valor de la propiedad email.
      * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public int getId() {
-        return id;
+    public String getEmail() {
+        return email;
     }
 
     /**
-     * Define el valor de la propiedad id.
+     * Define el valor de la propiedad email.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setId(int value) {
-        this.id = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad userId.
-     * 
-     */
-    public int getUserId() {
-        return userId;
-    }
-
-    /**
-     * Define el valor de la propiedad userId.
-     * 
-     */
-    public void setUserId(int value) {
-        this.userId = value;
+    public void setEmail(String value) {
+        this.email = value;
     }
 
     /**

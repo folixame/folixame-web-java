@@ -38,4 +38,8 @@ public class UsersWSClient {
 		return service.getFavourites(email).getFavourite();
 		
 	}
+
+	public void fav(String email, int eventId) {
+		service.addFavourite(email, eventId);
+	}
 }

@@ -104,20 +104,6 @@
                           </td>
                       </tr>
                   </c:forEach>
-                  	  <tr>
-                  	  	  <td>nombre</td>
-                          <td>lugar</td>
-                          <td>fecha 1</td>
-                          <td>fecha 2</td>
-                          <td>descripción 1</td>
-                          <td>descripción 2</td>
-                          <td>categoría</td>
-                          <td>
-                              <form action="" method="post">
-                                  <input class="btn btn-danger" type="submit" value="Borrar"/>
-                              </form>
-                          </td>
-                      </tr>
                   </tbody>
               </table>
               <div class="clearfix"></div>

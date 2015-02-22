@@ -13,12 +13,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sun.mail.iap.Response;
-
+import me.folixa.wsclient.EventsWSClient;
 import me.folixa.ws.events.Event;
 import me.folixa.ws.events.EventsCategories;
-import me.folixa.ws.events.EventsWSService;
-import me.folixa.wsclient.EventsWSClient;
+
+import com.sun.mail.iap.Response;
 
 /**
  * @author jorgeyp
@@ -38,8 +37,12 @@ public class MapServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		
-		resp.sendRedirect("map.jsp");
+		List<Event> events = client.readEvents();
+		List<EventsCategories> categories = client.readCategories();
+		List<String> places = client.getPlaces();
+
+		req.setAttribute("events", events);
+		req.getRequestDispatcher("map.jsp").forward(req, resp);
 	}
 	
 

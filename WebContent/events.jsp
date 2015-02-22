@@ -13,6 +13,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/events.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<!-- Ionicons -->
+	<link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
 
   </head>
   <body>
@@ -69,7 +72,7 @@
               </div>
               <div class="social">
 				<ul>
-				  <li class="star" style="width:33%;"><a href="#star"><span class="fa fa-star-o"></span></a></li>
+				  <li class="star" style="width:33%;"><a href="fav?eventId=${event.id}"><span class="fa fa-star-o"></span></a></li>
 				</ul>
 			  </div>
             </li>	

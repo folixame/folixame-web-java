@@ -141,4 +141,35 @@ public interface UsersSoap {
         @WebParam(name = "email", targetNamespace = "http://folixa.me/")
         String email);
 
+    /**
+     * 
+     * @param email
+     * @return
+     *     returns int
+     */
+    @WebMethod(operationName = "GetUserId", action = "http://folixa.me/GetUserId")
+    @WebResult(name = "GetUserIdResult", targetNamespace = "http://folixa.me/")
+    @RequestWrapper(localName = "GetUserId", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.users.GetUserId")
+    @ResponseWrapper(localName = "GetUserIdResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.users.GetUserIdResponse")
+    public int getUserId(
+        @WebParam(name = "email", targetNamespace = "http://folixa.me/")
+        String email);
+
+    /**
+     * 
+     * @param eventId
+     * @param email
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "AddFavourite", action = "http://folixa.me/AddFavourite")
+    @WebResult(name = "AddFavouriteResult", targetNamespace = "http://folixa.me/")
+    @RequestWrapper(localName = "AddFavourite", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.users.AddFavourite")
+    @ResponseWrapper(localName = "AddFavouriteResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.users.AddFavouriteResponse")
+    public String addFavourite(
+        @WebParam(name = "email", targetNamespace = "http://folixa.me/")
+        String email,
+        @WebParam(name = "eventId", targetNamespace = "http://folixa.me/")
+        int eventId);
+
 }
