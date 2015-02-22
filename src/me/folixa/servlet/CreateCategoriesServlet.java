@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import me.folixa.wsclient.EventsWSClient;
 import me.folixa.wsclient.UsersWSClient;
 
 /**
@@ -19,13 +20,13 @@ import me.folixa.wsclient.UsersWSClient;
  */
 @WebServlet("/crearcategorias")
 public class CreateCategoriesServlet extends HttpServlet {
-	UsersWSClient client;
+	EventsWSClient client;
 
 	/**
 	 * 
 	 */
 	public CreateCategoriesServlet() {
-		client = new UsersWSClient();
+		client = new EventsWSClient();
 	}
 
 	@Override
@@ -43,15 +44,11 @@ public class CreateCategoriesServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		String email = req.getParameter("email");
-		String password = req.getParameter("password");
+		String name = req.getParameter("name");
 		
-		if (client.logIn(email, password)) {
-			req.getSession().setAttribute("email", email);
-			req.getSession().setAttribute("password", password); // :'( ... el tiempo apremia. TODO fix
-			req.getSession().setAttribute("permission", "user");
-			resp.sendRedirect("index");
-			
+		if (req.getSession().getAttribute("permission").equals("admin")) {
+			client.createCategory(name);
+			req.getRequestDispatcher("/WEB-INF/crearcategorias.jsp").forward(req, resp);
 		} else {
 			req.setAttribute("error", "Bad login.");
 			req.getRequestDispatcher("login.jsp").forward(req, resp);

@@ -183,4 +183,14 @@ public class EventsWSClient {
 		}
 		return startDateXML;
 	}
+
+	public boolean createCategory(String name) {
+		try {
+			return eventsws.createCategory(name);
+		} catch (DatabaseException_Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
 }

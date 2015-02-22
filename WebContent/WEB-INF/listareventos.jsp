@@ -1,13 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Folíxame</title>
+<title>FolÃ­xame</title>
 <!-- Theme style -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="css/profile.css" rel="stylesheet" type="text/css" />
+<link href="css/admin.css" rel="stylesheet" type="text/css" />
 <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <!-- Ionicons -->
 <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
@@ -31,33 +32,35 @@
                             <th>Nombre</th>
                             <th>Lugar</th>
                             <th>Fecha de inicio</th>
-                            <th>Fecha de término</th>
-                            <th>Descripción corta</th>
-                            <th>Descripción detallada</th>
-                            <th>Categoría</th>
+                            <th>Fecha de tÃ©rmino</th>
+                            <th>DescripciÃ³n corta</th>
+                            <th>DescripciÃ³n detallada</th>
+                            <th>CategorÃ­a</th>
                             <th></th>
                             <th></th>
                           </thead>
                           <tbody>
-                            <tr>
-                              <td>nombre</td>
-                              <td>lugar</td>
-                              <td>fecha 1</td>
-                              <td>fecha 2</td>
-                              <td>descripción 1</td>
-                              <td>descripción 2</td>
-                              <td>categoría</td>
-                              <td>
-                              	<form action="modificareventos.jsp" method="post">
-                              		<input class="btn btn-primary" type="submit" value="Modificar"/>
-                              	</form>
-                              </td>
-                              <td>
-                              	<form action="" method="post">
-                              		<input class="btn btn-danger" type="submit" value="Borrar"/>
-                              	</form>
-                              </td>
+                          <c:forEach items="${events}" var="event">
+	                          <tr>
+	                              <td>${event.name}</td>
+	                              <td>${event.place}</td>
+	                              <td>${event.startDate.getDay()}-${event.startDate.getMonth()}-${event.startDate.getYear()}</td>
+	                              <td>${event.endDate.getDay()}-${event.endDate.getMonth()}-${event.endDate.getYear()}</td>
+	                              <td>${event.shortDescription}</td>
+	                              <td>${event.longDescription}</td>
+	                              <td>categoria</td>
+	                              <td>
+	                              	<form action="modificareventos" method="post">
+	                              		<input class="btn btn-primary" type="submit" value="Modificar"/>
+	                              	</form>
+	                              </td>
+	                              <td>
+	                              	<form action="" method="post">
+	                              		<input class="btn btn-danger" type="submit" value="Borrar"/>
+	                              	</form>
+	                              </td>
                             </tr>
+                          </c:forEach>
                           </tbody>
                         </table>
                         <div class="clearfix"></div>

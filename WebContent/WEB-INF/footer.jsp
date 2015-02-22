@@ -1,13 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <div class="container">
 	<hr>
     <!-- Footer -->
     <footer>
     	<div class="row">
         	<div class="col-lg-12">
-            	<p>Copyright &copy; FolÃ­xame 2015</p>
+            	<p>Copyright &copy; Folíxame 2015</p>
           	</div>
         </div>
     </footer>
@@ -17,3 +16,4 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
 <script src="js/app.js" type="text/javascript"></script>
+    

@@ -13,7 +13,8 @@
 			        </div>
 			        <ul class="sidebar-menu">
 			        	<li class="active">
-			            	<a href="admin.jsp">
+			            	<a href="admin
+			            	">
 			            		<i class="fa fa-dashboard"></i> <span>Dashboard</span>
 			            	</a>
 			            </li>

@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<form class="form-horizontal" action="crearcategorias" method="post">
+<form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
-<legend>Crear categoría</legend>
+<legend>Modificar categoría</legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -20,7 +20,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="save"></label>
   <div class="col-md-4">
-    <button id="save" name="save" class="btn btn-primary">Crear</button>
+    <button id="save" name="save" class="btn btn-primary">Modificar</button>
   </div>
 </div>
 
