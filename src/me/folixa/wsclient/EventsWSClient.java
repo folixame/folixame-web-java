@@ -210,14 +210,4 @@ public class EventsWSClient {
 		}
 		// TODO categoria
 	}
-
-	public void deleteEvent(int evetnId) {
-		try {
-			eventsws.deleteImagesByEventId(evetnId);
-			eventsws.deleteEventById(evetnId);
-		} catch (DatabaseException_Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 }

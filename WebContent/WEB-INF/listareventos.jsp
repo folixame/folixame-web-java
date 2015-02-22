@@ -56,7 +56,7 @@
 	                              	</form>
 	                              </td>
 	                              <td>
-	                              	<form action="borrareventos" method="get">
+	                              	<form action="" method="get">
 	                              		<input type="hidden" name="eventIdDelete" value="${event.id}">
 	                              		<input class="btn btn-danger" type="submit" value="Borrar"/>
 	                              	</form>
