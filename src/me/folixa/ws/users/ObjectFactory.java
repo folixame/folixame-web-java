@@ -106,6 +106,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetFavourites }
+     * 
+     */
+    public GetFavourites createGetFavourites() {
+        return new GetFavourites();
+    }
+
+    /**
      * Create an instance of {@link LogInResponse }
      * 
      */
@@ -154,6 +162,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetFavouritesResponse }
+     * 
+     */
+    public GetFavouritesResponse createGetFavouritesResponse() {
+        return new GetFavouritesResponse();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfFavourite }
+     * 
+     */
+    public ArrayOfFavourite createArrayOfFavourite() {
+        return new ArrayOfFavourite();
+    }
+
+    /**
      * Create an instance of {@link GetProfile }
      * 
      */
@@ -167,6 +191,14 @@ public class ObjectFactory {
      */
     public GetUserPermissionResponse createGetUserPermissionResponse() {
         return new GetUserPermissionResponse();
+    }
+
+    /**
+     * Create an instance of {@link Favourite }
+     * 
+     */
+    public Favourite createFavourite() {
+        return new Favourite();
     }
 
     /**

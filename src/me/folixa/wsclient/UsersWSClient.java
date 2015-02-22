@@ -1,5 +1,8 @@
 package me.folixa.wsclient;
 
+import java.util.List;
+
+import me.folixa.ws.users.Favourite;
 import me.folixa.ws.users.Security;
 import me.folixa.ws.users.Users;
 import me.folixa.ws.users.UsersSoap;
@@ -31,5 +34,8 @@ public class UsersWSClient {
 		return resp.equals("admin") ? true : false;
 	}
 
-	
+	public List<Favourite> getFavourites(String email) {
+		return service.getFavourites(email).getFavourite();
+		
+	}
 }

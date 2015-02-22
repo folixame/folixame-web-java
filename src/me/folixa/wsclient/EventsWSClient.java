@@ -240,4 +240,14 @@ public class EventsWSClient {
 		}
 		
 	}
+
+	public Event getEventById(int eventId) {
+		try {
+			return eventsws.readEventById(eventId);
+		} catch (DatabaseException_Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
 }

@@ -127,4 +127,18 @@ public interface UsersSoap {
         @WebParam(name = "email", targetNamespace = "http://folixa.me/")
         String email);
 
+    /**
+     * 
+     * @param email
+     * @return
+     *     returns me.folixa.ws.users.ArrayOfFavourite
+     */
+    @WebMethod(operationName = "GetFavourites", action = "http://folixa.me/GetFavourites")
+    @WebResult(name = "GetFavouritesResult", targetNamespace = "http://folixa.me/")
+    @RequestWrapper(localName = "GetFavourites", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.users.GetFavourites")
+    @ResponseWrapper(localName = "GetFavouritesResponse", targetNamespace = "http://folixa.me/", className = "me.folixa.ws.users.GetFavouritesResponse")
+    public ArrayOfFavourite getFavourites(
+        @WebParam(name = "email", targetNamespace = "http://folixa.me/")
+        String email);
+
 }

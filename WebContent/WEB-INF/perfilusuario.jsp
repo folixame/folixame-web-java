@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -87,6 +88,22 @@
                       <th></th>
                   </thead>
                   <tbody>
+                  <c:forEach items="${favs}" var="fav">
+                  	<tr>
+                  	  	  <td>${fav.name}</td>
+                          <td>${fav.place}</td>
+                          <td>${fav.startDate.getDay()}-${fav.startDate.getMonth()}-${fav.startDate.getYear()}</td>
+                          <td>${fav.endDate.getDay()}-${fav.endDate.getMonth()}-${fav.endDate.getYear()}</td>
+                          <td>${fav.shortDescription}</td>
+                          <td>${fav.longDescription}</td>
+                          <td>categoria</td>
+                          <td>
+                              <form action="" method="post">
+                                  <input class="btn btn-danger" type="submit" value="Borrar"/>
+                              </form>
+                          </td>
+                      </tr>
+                  </c:forEach>
                   	  <tr>
                   	  	  <td>nombre</td>
                           <td>lugar</td>
