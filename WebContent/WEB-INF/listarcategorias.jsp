@@ -1,10 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Folíxame</title>
+<title>FolÃ­xame</title>
 <!-- Theme style -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/profile.css" rel="stylesheet" type="text/css" />
@@ -24,7 +25,7 @@
 	        <section class="content-list-category">
 	        	<div class="row">
                     <div class="col-md-12">
-                      <h1> Lista de categorías </h1>
+                      <h1> Lista de categorÃ­as </h1>
                       <div class="table-responsive">
                         <table id="mytable" class="table table-bordred table-striped">
                           <thead>
@@ -33,19 +34,23 @@
                             <th></th>
                           </thead>
                           <tbody>
+                          <c:forEach items="${categories}" var="category"> 
                             <tr>
-                              <td>nombre</td>
+                              <td>${category.name}</td>
                               <td>
-                              	<form action="" method="post">
+                              	<form action="modificarcategorias" method="get">
+                              		<input type="hidden" name="categoryIdUpdate" value="${category.id}">
                               		<input class="btn btn-primary" type="submit" value="Modificar"/>
                               	</form>
                               </td>
                               <td>
-                              	<form action="" method="post">
+                              	<form action="borrarcategorias" method="get">
+                              		<input type="hidden" name="categoryIdDelete" value="${category.id}">
                               		<input class="btn btn-danger" type="submit" value="Borrar"/>
                               	</form>
                               </td>
                             </tr>
+                          </c:forEach>
                           </tbody>
                         </table>
                         <div class="clearfix"></div>

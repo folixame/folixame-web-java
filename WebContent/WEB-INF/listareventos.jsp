@@ -8,7 +8,7 @@
 <title>Folíxame</title>
 <!-- Theme style -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="css/admin.css" rel="stylesheet" type="text/css" />
+<link href="css/profile.css" rel="stylesheet" type="text/css" />
 <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <!-- Ionicons -->
 <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
